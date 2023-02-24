@@ -1,16 +1,20 @@
 import React from 'react'
+import './Header.css'
+
 
 const Header = () => {
   return (
-    <div className='header-wrapper'>
-      <div className='header_1-wrapper'>
-        <di className='header_1_inner_wrapper'>
+    <div className='header_wrapper c-flex'>
+      <div className='header_1_wrapper flex'>
+        <div className='header_1_inner_wrapper flex'>
 
-        </di>
+        </div>
       </div>
 
-      <div className='header-div-2'>
+      <div className='header_2_wrapper flex'>
+        <div className='header_2_inner_wrapper flex'>
 
+         </div>
       </div>
     </div>
   )

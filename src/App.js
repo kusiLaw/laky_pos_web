@@ -1,11 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/Header';
 
 function App() {
+
+  const s = (num) =>{
+  let l = []
+   let i = 0
+   while(i < num){
+    l.push('gjggigi')
+    i += 1
+   }
+   return l
+  }
   return (
-    <>
-     <h1>hello word</h1>
-    </>
+    <div className='container'>
+     <Header />
+     {
+      s(80).map(el => <div>el</div>)
+     }
+    </div>
   );
 }
 
