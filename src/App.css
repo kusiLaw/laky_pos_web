@@ -5,6 +5,7 @@
 :root {
  --main-bg-color: #0a273d;
  --context-btn-color: #d13d42;
+ --gray-text-color: #b3bdc4;
 }
 
 /* reset settings for all browser */
@@ -29,10 +30,108 @@ body {
   position: relative;
 }
 
-.flex {
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+.flex,
+.c-flex {
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+ }
+
+.c-flex{
+  flex-direction: column;
+}
+
+main{
+  padding: 2rem 1rem;;
+}
+
+ h1 {
+  font-size: 1.2rem;
+  font-family: Roboto;
+  color: var(--gray-text-color);
+  font-weight: 500;
+  line-height: 20px;
+ }
+
+ .presentation{
+  height: 80vh;
+  background-color: var(--main-bg-color);
+ }
+
+ .features{
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+ }
+
+ .features_text {
+  border: 2px solid rebeccapurple;
+  width: 100%;
+  min-height: 45%;
+  order: 1;
+ }
+
+ .features_img{
+  border: 2px solid rebeccapurple;
+  width: 100%;
+  order: 0;
+  min-height: 45%;
+ }
+
+ @media screen and (min-width: 768px) {
+
+    .features{
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-content: center;
+    }
+
+     .features_text {
+      border: 2px solid rebeccapurple;
+      width: 40%;
+      height: 80%;
+      order: 0;
+     }
+
+     .features_img{
+      border: 2px solid rebeccapurple;
+      position: relative;
+      width: 55%;
+      height: 80%;
+      order: 1;
+     }
+
+
+     .app_photo{
+       width: 60%;
+       box-shadow: 0 1.5rem 4rem rgba(var(--gray-text-color), 0.5);
+       border-radius: 2px;
+       position: absolute;
+     }
+   
+     .left {
+      top: 0;
+      left: 0;
+     }
+
+     .right{
+      top: 0;
+      right: 0;
+     }
+
+     .center {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+     }
+
+     .b-left{
+      bottom: 0;
+      left: 0;
+     }
+
+
+     .b-right{
+      bottom: 0;
+      right: 0;
+     }
  }

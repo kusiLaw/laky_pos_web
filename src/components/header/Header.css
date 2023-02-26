@@ -9,7 +9,7 @@
 
 .header_wrapper{
  position: relative;
-  height: 8rem;
+  height: 7rem;
   width: 100%;
   background-color: white;
 }
@@ -18,43 +18,35 @@
 
 .header_1_wrapper{
  position: relative;
- height: 3rem;
-  /* border: 1px solid gray;
-  height: 3rem;
-  width: 100%;
-  position: relative;
-  top: 0;
-  background-color: pink;
-  clear: both; */
+ height: 2.5rem;
+ background-color: #f5f6f6;
 }
 
 .header_1_inner_wrapper{
- border: 1px solid gray;
- height: 3rem;
+ background-color: #eee;
+ background-color: inherit;
+ height: 2.5rem;
  width: 100%;
  position: fixed;
  top: 0;
  /* background-color: pink; */
- clear: both;
 }
 
-/* .header_1_wrapper::after{
- content: '.';
- display: block;
- height: 3rem;
- clear: both;
- background-color: green;
- visibility: hidden;
-} */
 
 .header_2_wrapper{
- /* background-color: red; */
- height:  5rem;
+ background-color: red;
+ height:  4.5rem;
  width: 100%;
- position: -webkit-sticky; 
- position: sticky;
  z-index: 100;
  top: 0;
 
 }
-
+.header_2_inner_wrapper flex{
+ background-color: yellow;
+ height:  4.5rem;
+ width: 100%;
+ display: block;
+ position: -webkit-sticky; 
+ position: sticky;
+ top: 0;
+}
